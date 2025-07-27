@@ -45,7 +45,7 @@ for year in years:
         team_data["Season"] = year
         team_data["Team"] = team_name
         all_matches.append(team_data)
-        time.sleep(1)
+        time.sleep(60)
 
 match_df = pd.concat(all_matches)
 match_df.to_csv("matches.csv")
